@@ -1,0 +1,98 @@
+.contact {
+  height: 100vh;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10%;
+  // justify-content: space-between;
+  gap: 50px;
+  position: relative;
+  overflow: hidden;
+  // background-color: rgba(0, 0, 0, 0.5); /* Add background for visibility */
+  min-height: 500px; /* Ensure minimum height */
+
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white; /* Ensure text is visible */
+    h1 {
+      font-size: 100px;
+      line-height: 88px;
+      // width: 78vh;
+      color: white; /* Ensure heading is visible */
+    }
+    span {
+      font-weight: 300;
+      color: white; /* Ensure text is visible */
+    }
+  }
+  .formContainer {
+    flex: 1;
+    position: relative;
+    min-height: 400px; /* Ensure minimum height */
+
+    .phone {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 300px;
+      height: auto;
+      // background-color: rgba(255, 255, 255, 0.2); /* More visible background */
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block; /* Ensure image is displayed as block */
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+
+      .error {
+        color: #ff6b6b;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+
+      .success {
+        color: #51cf66;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+    }
+
+    input,
+    textarea {
+      padding: 20px;
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+      ); /* Semi-transparent background */
+      border: 1px solid white;
+      color: white;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 20px;
+      background-color: orange;
+      border: none;
+      border-radius: 5px;
+      font-weight: 500;
+      cursor: pointer;
+      color: white; /* Ensure button text is visible */
+    }
+  }
+}

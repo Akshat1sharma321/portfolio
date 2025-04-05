@@ -1,0 +1,55 @@
+.icon {
+  background-color: white;
+  padding: 0%;
+  margin: 0%;
+}
+.navbar {
+  height: 100px;
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    // background-color: rebeccapurple;
+    height: 100%;
+  }
+}
+.social {
+  //   background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 20px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+      background-color: white;
+      padding: 2px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.ak {
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
